@@ -1,20 +1,24 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 import SearchBar from './components/SearchBar';
 
 const API_KEY = process.env.YouTube_DATA_API;
 
-// Create a new component
-// This component should produce some HTML
+class App extends Component {
+  constructor(props) {
+    super(props);
 
-const App = () => {
-  return (
-    <div>
-      <SearchBar />
-    </div>
-  );
+    this.state = {};
+  }
+
+  render() {
+    return (
+      <div>
+        <SearchBar />
+      </div>
+    )
+  }
 }
 
-// Write it out to DO
 ReactDOM.render(<App />, document.querySelector('.container'));
