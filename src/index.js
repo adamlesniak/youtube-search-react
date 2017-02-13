@@ -8,7 +8,7 @@ import SearchBar   from './components/SearchBar';
 import VideoList   from './components/VideoList';
 import VideoDetail from './components/VideoDetail';
 
-const API_KEY = process.env.YouTube_DATA_API;
+const API_KEY = "YOUR_API_KEY";
 
 class App extends Component {
   constructor(props) {
